@@ -7,3 +7,8 @@ def turn_count(board)
   }
   return count
 end
+
+def current_player(board)
+  round=turn_count(board)
+  return round.even? ? "X" : "O"
+end
